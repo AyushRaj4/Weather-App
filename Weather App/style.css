@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Roboto";
+}
+
+main {
+    width: 26%;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    background: linear-gradient(
+    to bottom right,
+    rgb(0, 255, 208),
+    rgb(1, 94, 135)
+    )
+}
+
+#form1 {
+    width: 83%;
+    height: 8.4%;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+input {
+    width: 83%;
+    height: 100%;
+    border-radius: 1.7em;
+    border: none;
+    color: black;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* input:focus-visible {
+    border: none;
+} */
+
+button {
+    height: 3.3em;
+    width: 3.3em;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img1 {
+    width: 30%;
+    height: 40%;
+}
+
+button, input {
+    background-color: rgba(255, 255, 255, 0.905);
+}
+
+#div1 {
+    margin-bottom: 1em;
+}
+
+#div1 img {
+    width: 7em;
+    height: 7em;
+}
+
+#div2 {
+    height: 8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#temp {
+    font-size: 4em;
+    font-weight: 500;
+}
+
+#place {
+    font-size: 2.6em;
+}
+
+#div3 {
+    width: 83%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#humidity, #wind-speed {
+    width: 50%;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#humidity {
+    display: flex;
+    justify-content: center;
+}
+
+/* #humiidity span {
+    margin-left: 3em;
+} */
+
+#sp1 {
+    margin-left: 1em;
+}
+
+#humidity img, #wind-speed img {
+    width: 2em;
+    height: 2em;
+}
+
+#div4 {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#div4 span {
+    margin-left: 4em;
+    font-weight: 300;
+}
+
+@media (max-width: 1400px) {
+    html {
+        font-size: 13px;
+    }
+
+    button {
+        height: 3em;
+        width: 3em;
+    }
+
+    main {
+        height: 450px;
+    }
+}
+
+@media (max-width: 1227px) {
+    html {
+        font-size: 11px;
+    }
+
+    button{
+        width: 2.6em;
+        height: 2.6em;
+    }
+
+    main{
+        height: 385px;
+    }
+}
+
+@media (max-width: 1092px) {
+    main {
+        width: 50%;
+        /* height: 500px; */
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        width: 70%;
+        /* height: 500px; */
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 8px;
+    }
+
+    main {
+        width: 70%;
+        height: 280px;
+        box-sizing: border-box;
+    }
+
+    button {
+        height: 1.27em;
+        width: 1.27em;
+    }
+
+    #form1 {
+        padding-top: 1em;
+    }
+}
